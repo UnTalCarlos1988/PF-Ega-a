@@ -7,7 +7,7 @@
     
     <link rel="shortcut icon" href="../assets/imagenes/icono.jpg" type="image/png">
 
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/archivo.css">
 </head>
 <body>
     <header>
@@ -31,5 +31,92 @@
             </ul>
           </nav>
     </header>
+
+    <main>
+        <div class="contenedor1">
+          <h2 class="java">sobre Java</h2>
+         
+         <p class="parraJava">es un lenguaje de programación y una plataforma informática que fue comercializada por primera vez en 1995 por Sun Microsystems.
+
+            El lenguaje de programación Java fue desarrollado originalmente por James Gosling, de Sun Microsystems 
+            (constituida en 1983 y posteriormente adquirida el 27 de enero de 2010 por la compañía Oracle), y 
+            publicado en 1995 como un componente fundamental de la plataforma Java de Sun Microsystems. Su sintaxis 
+            deriva en gran medida de C y C++, pero tiene menos utilidades de bajo nivel que cualquiera de ellos. 
+            Las aplicaciones de Java son compiladas a bytecode (clase Java), que puede ejecutarse en cualquier máquina virtual Java (JVM) 
+            sin importar la arquitectura de la computadora subyacente.
+            
+            La compañía Sun desarrolló la implementación de referencia original para los compiladores de Java, 
+            máquinas virtuales y librerías de clases en 1991, y las publicó por primera vez en 1995. A partir de mayo de 2007, 
+            en cumplimiento de las especificaciones del Proceso de la Comunidad Java, Sun volvió a licenciar la mayoría de sus 
+            tecnologías de Java bajo la Licencia Pública General de GNU. Otros han desarrollado también implementaciones alternas 
+            a estas tecnologías de Sun, tales como el Compilador de Java de GNU y el GNU Classpath. 
+          </p>
+        
+      </div>  
+      
+      <div class="contenedor2">
+        <h2 class="java">Filosofia</h2>
+       
+       <p class="parraJava">El lenguaje Java se creó con cinco objetivos principales:
+
+        Debería usar el paradigma de la programación orientada a objetos.
+        Debería permitir la ejecución de un mismo programa en múltiples sistemas operativos.
+        Debería incluir por defecto soporte para trabajo en red.
+        Debería diseñarse para ejecutar código en sistemas remotos de forma segura.
+        Debería ser fácil de usar y tomar lo mejor de otros lenguajes orientados a objetos, como C++.
+    
+    Para conseguir la ejecución de código remoto y el soporte de red, los programadores de Java a veces recurren a extensiones 
+    como CORBA (Common Object Request Broker Architecture), Internet Communications Engine u OSGi, respectivamente.
+    Orientado a objetos
+    Véanse también: Lenguaje orientado a objetos y Objeto (programación).
+    
+    La primera característica, orientado a objetos (“OO”), se refiere a un método de programación y al diseño del lenguaje. 
+    Aunque hay muchas interpretaciones para OO, una primera idea es diseñar el software de forma que los distintos tipos de 
+    datos que usen estén unidos a sus operaciones. Así, los datos y el código (funciones o métodos) se combinan en entidades llamadas objetos.
+     Un objeto puede verse como un paquete que contiene el “comportamiento” (el código) y el “estado” (datos). El principio es 
+     separar aquello que cambia de las cosas que permanecen inalterables. Frecuentemente, cambiar una estructura de datos implica 
+     un cambio en el código que opera sobre los mismos, o viceversa. Esta separación en objetos coherentes e independientes ofrece 
+     una base más estable para el diseño de un sistema software. El objetivo es hacer que grandes proyectos sean fáciles de gestionar y manejar, 
+     mejorando como consecuencia su calidad y reduciendo el número de proyectos fallidos.
+    
+    Otra de las grandes promesas de la programación orientada a objetos es la creación de entidades más genéricas (objetos) 
+    que permitan la reutilización del software entre proyectos, una de las premisas fundamentales de la Ingeniería del Software. 
+    Un objeto genérico “cliente”, por ejemplo, debería en teoría tener el mismo conjunto de comportamiento en diferentes proyectos, 
+    sobre todo cuando estos coinciden en cierta medida, algo que suele suceder en las grandes organizaciones. En este sentido, 
+    los objetos podrían verse como piezas reutilizables que pueden emplearse en múltiples proyectos distintos, 
+    posibilitando así a la industria del software construir proyectos de envergadura empleando componentes ya existentes y de comprobada calidad, 
+    conduciendo esto finalmente a una reducción drástica del tiempo de desarrollo. Podemos usar como ejemplo de objeto el aluminio. 
+    Una vez definidos datos (densidad, maleabilidad, etc.), y su “comportamiento” (soldar dos piezas, etc.), el objeto “aluminio” 
+    puede ser reutilizado en el campo de la construcción, del automóvil, de la aviación, etc.
+    
+    La reutilización del software ha experimentado resultados dispares, encontrando dos dificultades principales: el diseño de objetos
+     realmente genéricos es pobremente comprendido, y falta una metodología para la amplia comunicación de oportunidades de reutilización.
+    Algunas comunidades de “código abierto” (open source) quieren ayudar en este problema dando medios a los desarrolladores para diseminar la información sobre el uso y versatilidad de objetos reutilizables y bibliotecas de objetos.
+    Independencia de la plataforma
+    
+    La segunda característica, la independencia de la plataforma, significa que programas escritos en el lenguaje Java pueden ejecutarse 
+    igualmente en cualquier tipo de hardware. Este es el significado de ser capaz de escribir un programa una vez y que pueda ejecutarse en cualquier dispositivo, tal como reza el axioma de Java, "write once, run anywhere".
+    
+    Para ello, se compila el código fuente escrito en lenguaje Java, para generar un código conocido como “bytecode” (específicamente Java bytecode), instrucciones máquina simplificadas específicas de la plataforma Java. Esta pieza está “a medio camino” entre el código fuente y el código máquina que entiende el dispositivo destino. El bytecode es ejecutado entonces en la máquina virtual (JVM), un programa escrito en código nativo de la plataforma destino (que es el que entiende su hardware), que interpreta y ejecuta el código. Además, se suministran bibliotecas adicionales para acceder a las características de cada dispositivo (como los gráficos, ejecución mediante hebras o threads, la interfaz de red) de forma unificada. Se debe tener presente que, aunque hay una etapa explícita de compilación, el bytecode generado es interpretado o convertido a instrucciones máquina del código nativo por el compilador JIT (Just In Time).
+    
+    Hay implementaciones del compilador de Java que convierten el código fuente directamente en código objeto nativo, como GCJ. Esto elimina la etapa intermedia donde se genera el bytecode, pero la salida de este tipo de compiladores solamente puede ejecutarse en un tipo de arquitectura.
+    
+    La licencia sobre Java de Sun insiste en que todas las implementaciones sean “compatibles”. Esto dio lugar a una disputa legal entre Microsoft y Sun, cuando este último alegó que la implementación de Microsoft no daba soporte a las interfaces RMI y JNI además de haber añadido características ‘’dependientes’’ de su plataforma. Sun demandó a Microsoft y ganó por daños y perjuicios (unos 20 millones de dólares), así como una orden judicial forzando el acatamiento de la licencia de Sun. Como respuesta, Microsoft no ofrece Java con su versión de sistema operativo, y en recientes versiones de Windows, su navegador Internet Explorer no admite la ejecución de applets sin un conector (o plugin) aparte. Sin embargo, Sun y otras fuentes ofrecen versiones gratuitas para distintas versiones de Windows.
+    
+    Las primeras implementaciones del lenguaje usaban una máquina virtual interpretada para conseguir la portabilidad. Sin embargo, el resultado eran programas que se ejecutaban comparativamente más lentos que aquellos escritos en C o C++. Esto hizo que Java se ganase una reputación de lento en rendimiento. Las implementaciones recientes de la JVM dan lugar a programas que se ejecutan considerablemente más rápido que las versiones antiguas, empleando diversas técnicas, aunque sigue siendo mucho más lentos que otros lenguajes.
+    
+    La primera de estas técnicas es simplemente compilar directamente en código nativo como hacen los compiladores tradicionales, eliminando la etapa del bytecode. Esto da lugar a un gran rendimiento en la ejecución, pero tapa el camino a la portabilidad. Otra técnica, conocida como compilación JIT (Just In Time, o "compilación al vuelo"), convierte el bytecode a código nativo cuando se ejecuta la aplicación. Otras máquinas virtuales más sofisticadas usan una "recompilación dinámica" en la que la VM es capaz de analizar el comportamiento del programa en ejecución y recompila y optimiza las partes críticas. La recompilación dinámica puede lograr mayor grado de optimización que la compilación tradicional (o estática), ya que puede basar su trabajo en el conocimiento que de primera mano tiene sobre el entorno de ejecución y el conjunto de clases cargadas en memoria. La compilación JIT y la recompilación dinámica permiten a los programas Java aprovechar la velocidad de ejecución del código nativo sin por ello perder la ventaja de la portabilidad en ambos.
+    
+    La portabilidad es técnicamente difícil de lograr, y el éxito de Java en ese campo ha sido dispar. Aunque es de hecho posible escribir programas para la plataforma Java que actúen de forma correcta en múltiples plataformas de distinta arquitectura, el gran número de estas con pequeños errores o inconsistencias llevan a que a veces se parodie el eslogan de Sun, "Write once, run anywhere" como "Write once, debug everywhere" (o “Escríbelo una vez, ejecútalo en cualquier parte” por “Escríbelo una vez, depúralo en todas partes”).
+    
+    El concepto de independencia de la plataforma de Java cuenta, sin embargo, con un gran éxito en las aplicaciones en el entorno del servidor, como los Servicios Web, los Servlets, los Java Beans, así como en sistemas empotrados basados en OSGi, usando entornos Java empotrados.
+    El recolector de basura
+    Véase también: Recolector de basura
+    
+    En Java el problema de fugas de memoria se evita en gran medida gracias a la recolección de basura (o automatic garbage collector). El programador determina cuándo se crean los objetos, y el entorno, en tiempo de ejecución de Java (Java runtime), es el responsable de gestionar el ciclo de vida de los objetos. El programa, u otros objetos, pueden tener localizado un objeto mediante una referencia a este. Cuando no quedan referencias a un objeto, el recolector de basura de Java borra el objeto, liberando así la memoria que ocupaba previniendo posibles fugas (ejemplo: un objeto creado y únicamente usado dentro de un método solamente tiene entidad dentro de este; al salir del método el objeto es eliminado). Aun así, es posible que se produzcan fugas de memoria si el código almacena referencias a objetos que ya no son necesarios; es decir, pueden aún ocurrir, pero en un nivel conceptual superior. En definitiva, el recolector de basura de Java permite una fácil creación y eliminación de objetos y mayor seguridad.  
+        </p>
+      
+    </div>     
+             </main>
 </body>
 </html>
