@@ -1,8 +1,8 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap");
 * {
-  padding: auto;
+  padding: 0;
   margin: auto;
-  box-sizing: border-box;
   text-decoration: none;
 }
 
@@ -14,66 +14,10 @@ body {
   background-attachment: fixed;
   -o-object-fit: cover;
      object-fit: cover;
+  min-height: 100%;
+  font-family: "Saira Condensed", sans-serif;
 }
-
-nav {
-  background-color: black;
-  color: #000000;
-  width: 100%;
-  height: auto;
-  padding: 1.5em 5%;
-  display: flex;
-  justify-content: space-between;
-  align-items: row center;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 20px 5px rgb(0, 0, 0);
-  border: solid 3px rgba(255, 255, 255, 0.5);
-  border-radius: 5px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  margin-left: 15px;
-}
-
-nav a {
-  color: black;
-  text-decoration: none;
-  padding: 5px 10px;
-  font-size: 150%;
-  font-family: "Times New Roman", Times, serif;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 20px 5px rgb(0, 0, 0);
-  border: solid 3px rgba(255, 255, 255, 0.5);
-  border-radius: 5px;
-  transition: 1s;
-  display: flex;
-}
-
-nav a:hover {
-  transform: scale(0.75);
-}
-
-@media screen and (max-width: 768px) {
-  nav {
-    flex-direction: row;
-    align-items: flex-start;
-    height: auto;
-  }
-  nav ul {
-    margin-top: 20px;
-    flex-direction: column;
-  }
-  nav ul li {
-    margin-left: 0;
-    margin-bottom: 10px;
-  }
-}
-h1 {
+body h1 {
   padding: 20px;
   text-align: center;
   width: 90%;
@@ -88,22 +32,69 @@ h1 {
   border-radius: 5px;
   box-shadow: 0 10px 20px 5px rgb(0, 0, 0);
 }
-
+body nav {
+  color: #000000;
+  width: 100%;
+  height: auto;
+  padding: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 20px 5px rgb(0, 0, 0);
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+body nav ul {
+  list-style: none;
+  display: flex;
+}
+body nav ul li {
+  margin-left: 15px;
+}
+body nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 150%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 20px 5px rgb(0, 0, 0);
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  transition: 1s;
+  display: flex;
+}
+body nav ul li a:hover {
+  transform: scale(0.75);
+}
 @media screen and (max-width: 768px) {
-  h1 {
+  body nav {
+    flex-direction: row;
+    align-items: flex-start;
+    height: auto;
+  }
+  body nav ul {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  body nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 768px) {
+  body h1 {
     width: 80%;
     max-width: 100%;
   }
 }
-section {
+body section {
   display: flex;
   width: 90%;
   height: 400px;
   padding: 0;
   margin: auto;
 }
-
-section img {
+body section img {
   width: 0px;
   flex-grow: 1;
   -o-object-fit: cover;
@@ -111,21 +102,18 @@ section img {
   transition: 1s ease;
   max-height: 400px;
 }
-
-section img:hover {
+body section img:hover {
   cursor: crosshair;
   width: 5%;
   opacity: 1;
   filter: contrast(120%);
 }
-
-.contenedor1 {
+body .contenedor1 {
   padding: 20px;
   text-align: justify;
   background-color: white;
   color: black;
   width: 90%;
-  max-width: 800px;
   height: auto;
   display: block;
   margin: 10px auto;
@@ -134,14 +122,12 @@ section img:hover {
   border-radius: 5px;
   box-shadow: 0 10px 20px 5px rgb(0, 0, 0);
 }
-
-.contenedor2 {
+body .contenedor2 {
   padding: 20px;
   text-align: justify;
   background-color: white;
   color: black;
   width: 90%;
-  max-width: 800px;
   height: auto;
   display: block;
   margin: 10px auto;
@@ -150,11 +136,22 @@ section img:hover {
   border-radius: 5px;
   box-shadow: 0 10px 20px 5px rgb(0, 0, 0);
 }
-
 @media screen and (max-width: 768px) {
-  h2, p {
+  body h2, body p {
     width: 95%;
     margin: 10px auto;
     text-align: left;
   }
+}
+body footer {
+  text-align: justify;
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: auto;
+  display: flex;
+  background: rgba(255, 255, 255, 0.1);
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  box-shadow: 0 10px 20px 5px rgb(0, 0, 0);
 }/*# sourceMappingURL=archivo.css.map */
